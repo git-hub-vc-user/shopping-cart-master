@@ -1,18 +1,17 @@
 package org.ejb.sample.ejb;
 
 import org.ejb.sample.model.Product;
-
-import javax.ejb.Local;
 import java.util.List;
+import org.springframework.stereotype.Component;
 
-@Local
+@Component()
 public interface ShoppingCart {
 
-	void addProduct(Product product);
-	
-	void completePurchase();
+    void addProduct(Product product);
 
-	List<String> getProducts();
+    void completePurchase();
 
-	List<Product> getCartProducts();
+    List<String> getProducts();
+
+    List<Product> getCartProducts();
 }

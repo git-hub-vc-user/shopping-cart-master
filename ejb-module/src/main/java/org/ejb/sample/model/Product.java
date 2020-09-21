@@ -1,7 +1,6 @@
 package org.ejb.sample.model;
 
 import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,26 +12,25 @@ import javax.persistence.Table;
 @Table(name = "PRODUCT")
 public class Product implements Serializable {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID_PRODUCT", nullable = false)
-	private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_PRODUCT", nullable = false)
+    private int id;
 
-	@Column(name = "DESCRIPTION", nullable = false)
-	private String description;
+    @Column(name = "DESCRIPTION", nullable = false)
+    private String description;
 
-	public int getId() {
-		return id;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public String getDescription() {
-		return description;
-	}
+    public String getDescription() {
+        return description;
+    }
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
