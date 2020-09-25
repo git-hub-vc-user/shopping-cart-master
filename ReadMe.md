@@ -1,0 +1,1 @@
+Copy the deployable from target directory and use it to deploy, run or create image.
